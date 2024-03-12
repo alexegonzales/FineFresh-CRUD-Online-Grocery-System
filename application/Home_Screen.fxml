@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #e8faf4; -fx-background-radius: 25px;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeScreen_Controller">
+   <children>
+      <ImageView fitHeight="189.0" fitWidth="318.0" layoutX="5.0" layoutY="300.0">
+         <image>
+            <Image url="@../images/sales.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="54.0" prefWidth="335.0" style="-fx-background-color: #53a687; -fx-background-radius: 25px 25px 0px 0px;">
+         <children>
+            <Label layoutX="100.0" layoutY="5.0" text="Fine Fresh" textFill="#e8faf4">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXHamburger fx:id="burger" layoutX="17.0" layoutY="16.0" prefHeight="20.0" prefWidth="25.0" stylesheets="@application.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXHamburger>
+         </children>
+      </Pane>
+      <Button layoutY="159.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="335.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="103.0" fitWidth="317.0">
+               <image>
+                  <Image url="@../images/online_food.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutY="54.0" prefHeight="90.0" prefWidth="335.0" style="-fx-background-color: #def294; -fx-background-radius: 0px 0px 25px 25px;">
+         <children>
+            <Button fx:id="meatBTN" contentDisplay="TOP" layoutY="4.0" mnemonicParsing="false" onAction="#gotoMeat" prefHeight="83.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Meat" textFill="#53a687">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../images/meats.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="prodBTN" contentDisplay="TOP" layoutX="113.0" layoutY="4.0" mnemonicParsing="false" onAction="#gotoProd" prefHeight="83.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Produce" textFill="#53a687">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../images/produce.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seaBTN" contentDisplay="TOP" layoutX="222.0" layoutY="4.0" mnemonicParsing="false" onAction="#gotoSea" prefHeight="83.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Seafood" textFill="#53a687">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../images/seafoods.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="430.0" direction="BOTTOM" layoutY="144.0" prefHeight="390.0" prefWidth="335.0" />
+      <Pane layoutY="534.0" prefHeight="66.0" prefWidth="335.0" style="-fx-background-color: #53a687; -fx-background-radius: 0px 0px 25px 25px;">
+         <children>
+            <JFXButton fx:id="homeBTN" contentDisplay="TOP" onAction="#gotoHome" prefHeight="66.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Home" textFill="#e8faf4">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../images/home.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="basBTN" contentDisplay="TOP" layoutX="113.0" onAction="#gotoBas" prefHeight="66.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Basket" textFill="#e8faf4">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../images/basket.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="notBTN" contentDisplay="TOP" layoutX="225.0" onAction="#gotoNot" prefHeight="66.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Notification" textFill="#e8faf4">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../images/notif.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

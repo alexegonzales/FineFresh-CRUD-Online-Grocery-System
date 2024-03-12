@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #e8faf4; -fx-background-radius: 25px;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Notifications_Controller">
+   <children>
+      <Pane prefHeight="54.0" prefWidth="335.0" style="-fx-background-color: #53a687; -fx-background-radius: 25px 25px 0px 0px;">
+         <children>
+            <Label layoutX="109.0" layoutY="5.0" text="Notifications" textFill="#e8faf4">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="44.0" layoutY="6.0">
+               <image>
+                  <Image url="@../images/notif.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="534.0" prefHeight="66.0" prefWidth="335.0" style="-fx-background-color: #53a687; -fx-background-radius: 0px 0px 25px 25px;">
+         <children>
+            <JFXButton fx:id="homeBTN" contentDisplay="TOP" onAction="#gotoHome" prefHeight="66.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Home" textFill="#e8faf4">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../images/home.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="basBTN" contentDisplay="TOP" layoutX="113.0" onAction="#gotoBas" prefHeight="66.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Basket" textFill="#e8faf4">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../images/basket.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="notBTN" contentDisplay="TOP" layoutX="225.0" onAction="#gotoNot" prefHeight="66.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Notifications" textFill="#e8faf4">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../images/notif.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Text fill="#686868" layoutX="115.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No notifications">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
